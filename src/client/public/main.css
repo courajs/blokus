@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.piece {
+  display: inline-block;
+}
+.piece.highlighted {
+  outline: 5px ridge deepSkyBlue;
+}
+
+.blok {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border: 5px outset;
+}
+.inner-blok {
+  width: 40px;
+  height: 40px;
+  border: 5px inset;
+}
+
+.blok-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+
+.green.piece .blok {
+  background-color: green;
+  border-color: #009C00;
+}
+.green.piece .inner-blok {
+  background-color: green;
+  border-color: #009400;
+}
+
+.red.piece .blok {
+  background-color: red;
+  border-color: red;
+}
+.red.piece .inner-blok {
+  background-color: red;
+  border-color: red;
+}
+
+.yellow.piece .blok {
+  background-color: yellow;
+  border-color: yellow;
+}
+.yellow.piece .inner-blok {
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.blue.piece .blok {
+  background-color: blue;
+  border-color: blue;
+}
+.blue.piece .inner-blok {
+  background-color: blue;
+  border-color: blue;
+}
