@@ -45,8 +45,8 @@ var Piece = React.createClass({
 })
 
 render(<div>
-         <Piece highlighted={true} color="green" pieceType={0}/>
+         <Piece color="green" pieceType={0}/>
          <Piece highlighted={true} color="red" pieceType={0}/>
-         <Piece highlighted={true} color="yellow" pieceType={0}/>
-         <Piece highlighted={true} color="blue" pieceType={0}/>
+         <Piece color="yellow" pieceType={0}/>
+         <Piece color="blue" pieceType={0}/>
        </div>, document.getElementById('app'));
