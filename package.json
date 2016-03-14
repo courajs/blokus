@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start"
   },
   "author": "Aaron Sikes",
   "license": "ISC",
@@ -15,5 +15,15 @@
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "webpack": "^1.12.14"
+  },
+  "devDependencies": {
+    "babel-root-import": "^3.2.2",
+    "expect": "^1.15.2",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-cli": "^0.1.2",
+    "karma-mocha": "^0.2.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0"
   }
 }

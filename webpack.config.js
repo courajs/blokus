@@ -14,8 +14,17 @@ var config = {
     loaders : [
       {
         test : /\.jsx?/,
+        loader : 'babel',
         include : APP_DIR,
-        loader : 'babel'
+        query: {
+          presets: [
+            'react',
+            'es2015'
+          ],
+          plugins: [
+            'babel-root-import'
+          ]
+        }
       }
     ]
   }
