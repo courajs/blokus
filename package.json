@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "open": "open -a 'google chrome' src/client/index.html"
   },
   "author": "Aaron Sikes",
   "license": "ISC",
