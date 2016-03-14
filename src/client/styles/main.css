@@ -11,24 +11,24 @@
 
 .blok {
   display: inline-block;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  border: 5px outset;
+  vertical-align: middle; /* fix its container making 4px of room for non-existant descenders */
+  width: 40px;
+  height: 40px;
+  border: 4px outset;
   border-radius: 3px;
 }
 .inner-blok {
-  width: 40px;
-  height: 40px;
-  border: 5px inset;
+  width: 32px;
+  height: 32px;
+  border: 4px inset;
   border-radius: 3px;
 }
 
 .blok-spacer {
   display: inline-block;
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .green.piece .blok {
@@ -61,4 +61,18 @@
 }
 .blue.piece .inner-blok {
   border-color: #4040D2;
+}
+
+.board {
+  width: 808px;
+  border: 4px solid #E7DFEE;
+}
+
+.cell {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-color: #E7DFEE;
+  border: 2px inset;
 }

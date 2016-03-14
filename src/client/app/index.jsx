@@ -1,7 +1,8 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 import Piece from './Piece.jsx';
 import { pieceTypes } from './Piece.jsx';
+import Board from './Board.jsx';
 
 let colors = ['green', 'red', 'yellow', 'blue'];
 
@@ -10,4 +11,13 @@ let renderedPieces = pieceTypes.map(function (_, i) {
   return <Piece pieceType={i} color={color}/>;
 });
 
-render(<div>{renderedPieces}</div>, document.getElementById('app'));
+let App = React.createClass({
+  render() {
+    return <div>
+      <Board/>
+      {renderedPieces}
+      </div>;
+  }
+});
+
+render(<App/>, document.getElementById('app'));
