@@ -2,6 +2,24 @@ import expect from 'expect';
 import { rotateCW, rotateCCW } from '~/rotate-matrix';
 
 describe('matrix rotation', function() {
+  it('rotates a square matrix', function() {
+    let start = [
+      [0, 1],
+      [3, 2]
+    ];
+    let cw = [
+      [3, 0],
+      [2, 1]
+    ];
+    let ccw = [
+      [1, 2],
+      [0, 3]
+    ];
+    expect(rotateCW(start)).toEqual(cw);
+    expect(rotateCCW(start)).toEqual(ccw);
+    expect(rotateCW(rotateCCW(start))).toEqual(start);
+  });
+
   it('rotates matrices', function() {
     let start = [
       [1, 2, 3],
